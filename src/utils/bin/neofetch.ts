@@ -90,11 +90,11 @@ const getMainColor = () => {
 
   switch (platform) {
     case "MacOS":
-      return theme.cyan;
+      return theme?.cyan;
     case "Windows":
-      return theme.blue;
+      return theme?.blue;
     case "Linux":
-      return theme.red;
+      return theme?.red;
   }
 };
 

@@ -15,7 +15,16 @@ interface ShellContextType {
   clearHistory: () => void;
 }
 
-const ShellContext = React.createContext<ShellContextType>(null);
+const ShellContext = React.createContext<ShellContextType>({
+  history: [],
+  command: "",
+  lastCommandIndex: 0,
+  setHistory: () => {},
+  setCommand: () => {},
+  setLastCommandIndex: () => {},
+  execute: () => Promise.resolve(),
+  clearHistory: () => {},
+});
 
 interface ShellProviderProps {
   children: React.ReactNode;

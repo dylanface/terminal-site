@@ -34,7 +34,7 @@ export const sudo = async (args?: string[]): Promise<string> => {
   //   window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
   // }, 1000);
 
-  return `Permission denied: unable to run the command '${args[0]}' as root.`;
+  return `Permission denied: unable to run the command '${args![0]}' as root.`;
 };
 
 export const banner = (args?: string[]): string => {

@@ -24,10 +24,12 @@ Example:
     case "set":
       const selectedTheme = args[1];
 
-      return callback(selectedTheme);
+      return callback!(selectedTheme);
     case "random":
       const randomTheme = Themes[Math.floor(Math.random() * Themes.length)];
 
-      return callback(randomTheme.name.toLowerCase());
+      return callback!(randomTheme.name.toLowerCase());
   }
+
+  return "Invalid argument";
 };
