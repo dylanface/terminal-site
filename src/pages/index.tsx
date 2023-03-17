@@ -28,6 +28,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
         <title>Dylanface | Shell</title>
         <meta name="description" content="Dylanface's shell" />
         <link rel="icon" href="/favicon.ico" />
+        <></>
       </Head>
 
       <div
